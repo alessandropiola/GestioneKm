@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nota Spese</string>
+    <string name="button_donate">Dona</string>
+    <string name="button_cancel">Cancella</string>
+    <string name="billing_not_supported_title">Non è possibile fare acquisti</string>
+    <string name="billing_not_supported_message">Il servizio di fatturazione del Market non è al
+		momento disponibile. Puoi continuare ad usare l\'app ma non puoi fare
+		acquisti.</string>
+    <string name="donate_small">Dona € 1</string>
+    <string name="donate_medium">Dona € 3</string>
+    <string name="donate_large">Dona € 5</string>
+    <string name="donate_xlarge">Dona € 10</string>
+    <string name="donation_dialog_title">Dona per la funzionalità Premium</string>
+    <string name="donation_dialog_donation">Scegli l\'importo:</string>
+    <string name="donate_dummy">Scegli donazione</string>
+    <string name="android_test_purchased">android_test_purchased</string>
+    <string name="android_test_canceled">android_test_canceled</string>
+    <string name="android_test_refunded">android_test_refunded</string>
+    <string name="android_test_item_unavailable">android_test_item_unavailable</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

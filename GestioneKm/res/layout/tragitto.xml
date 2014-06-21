@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:onClick="sendtragitto"
+        android:text="Invia Tragitto" />
+
+<RadioGroup 
+	android:id="@+id/RadioGroup01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+
+<RadioButton android:text="Casa-Lavoro-Casa" android:id="@+id/RB01" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+<RadioButton android:text="Casa-Altro-Casa" android:id="@+id/RB02" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+<RadioButton android:text="Rileva Posizione Attuale e aggiugila al percorso" android:id="@+id/RB03" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+
+</RadioGroup>
+
+<EditText
+android:id="@+id/posizoneattuale"
+android:layout_width="wrap_content"
+android:text="-----"
+android:layout_height="wrap_content" 
+android:layout_centerHorizontal="true" 
+android:layout_centerVertical="true" 
+android:minWidth="150dp">
+</EditText>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleziona la tipologia scrivi il valore e salva il dato"
+                android:textSize="12dip"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/datealetro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data: 00/00/0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/bsendaltro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="150dp"
+                android:onClick="inviaaltro"
+                android:text="Invia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/RadioGroup01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="true"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/RBa01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Rifornimento(€+Litri)" />
+
+                <RadioButton
+                    android:id="@+id/RBa02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasti" />
+
+                <RadioButton
+                    android:id="@+id/RBa03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Albergo" />
+
+                <RadioButton
+                    android:id="@+id/RBa04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trasporto" />
+
+                <RadioButton
+                    android:id="@+id/RBa05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Altro" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="Personale" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/litri"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="€"
+                android:inputType="numberDecimal"
+                android:paddingTop="10dp" />
+
+            <EditText
+                android:id="@+id/eTextAltro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Litri"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

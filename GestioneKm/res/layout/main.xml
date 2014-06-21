@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sfondo"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/titolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/datadelgiorno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/DataImpostata"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <NumberPicker
+            android:id="@+id/np1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#44AA0000" >
+
+        </NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/np2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#44AA0000" />
+
+        <NumberPicker
+            android:id="@+id/np3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#44AA0000" />
+
+        <NumberPicker
+            android:id="@+id/np4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#44AA0000" />
+
+        <NumberPicker
+            android:id="@+id/np5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#44AA0000" />
+
+        <NumberPicker
+            android:id="@+id/np6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#44AA0000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp" >
+
+    <Button
+        android:id="@+id/startKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startKm"
+        android:text="startKm"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tragitto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tragitto"
+        android:text="way"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/fineKm"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="fineKm"
+        android:text="endKm"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<LinearLayout android:id="@+id/pulsanti" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+
+    <Button
+        android:id="@+id/beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="birra"
+        android:text="Birretta?"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+<Button
+    android:id="@+id/lettura"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="export"
+    android:text="Export XLS"
+    android:textSize="12dp"
+    android:textStyle="bold" >
+
+</Button>
+
+<Button
+    android:id="@+id/altro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="altro"
+    android:text="other"
+    android:textSize="12dp"
+    android:textStyle="bold" >
+
+</Button>
+</LinearLayout>
+
+</LinearLayout>
+

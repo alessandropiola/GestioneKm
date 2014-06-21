@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Config2"
+        activity="it.alessandropiola.gestionekm.Main"
+        config="layout-sw320dp-w320dp-h533dp-normal-long-port-notnight-hdpi-finger-keyssoft-nokeys-navhidden-trackball-800x480-v18"
+        device="Nexus One"
+        devicestate="Portrait"
+        target="Android 4.3"
+        theme="@android:style/Theme" >
+    </preview>
+
+</previews>

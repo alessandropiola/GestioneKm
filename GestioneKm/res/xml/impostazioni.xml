@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="Parametri Base NS">
+        <EditTextPreference
+                android:name="EditText Preference"
+                android:defaultValue="Nothing"
+                android:title="Targa dell' Auto" android:summary="Targa Auto" android:key="TargaAuto"/>
+        <EditTextPreference android:key="Nome" android:title="Dipendente" android:summary="Nome Cognome"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Spedizione NotaSpese">
+            <CheckBoxPreference android:title="Spedire per mail la NS?" android:key="ifsend"/>
+        	<EditTextPreference android:key="Email" android:defaultValue="" android:summary="Email" android:title="Destinatario mail NS"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Attiva Notifica giornaliera">
+            <CheckBoxPreference android:title="Attivare notifica?" android:key="notificaalarm"/>
+        	<EditTextPreference android:key="oranotifica" android:defaultValue="08:15" android:title="Orario notifica"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Extras">
+            <EditTextPreference android:key="Code" android:defaultValue="" android:summary="Code" android:title="Code"/>
+        </PreferenceCategory>
+        
+</PreferenceScreen>

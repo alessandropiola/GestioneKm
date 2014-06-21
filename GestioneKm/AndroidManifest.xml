@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.alessandropiola.gestionekm"
+    android:versionCode="43"
+    android:versionName="2.0.2.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" >
+    </uses-feature>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" >
+    </uses-feature>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="it.alessandropiola.gestionekm.Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="it.alessandropiola.gestionekm.Impostazioni" >
+        </activity>
+        <activity android:name="it.alessandropiola.gestionekm.Tragitto" >
+        </activity>
+        <activity android:name="it.alessandropiola.gestionekm.Altro" >
+        </activity>
+        <activity android:name="it.alessandropiola.gestionekm.CambioData" >
+        </activity>
+        <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+      <!-- Track Market installs -->
+        <receiver
+            android:name="com.admob.android.ads.analytics.InstallReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="it.alessandropiola.gestionekm.adwidgt" >
+        </activity>
+        <activity android:name="it.alessandropiola.gestionekm.Info" >
+        </activity>
+
+        <!-- Robotmedia AndroidBillingLibrary -->
+        <service android:name="net.robotmedia.billing.BillingService" />
+
+        
+         <receiver   android:name=".Alarm"></receiver>
+         
+
+        <activity
+            android:name="it.alessandropiola.gestionekm.Alarm"
+            android:label="@string/title_activity_alarm" >
+        </activity>
+        <receiver android:name="RebootAlarm">
+                <intent-filter>
+        <action
+            android:name="android.intent.action.BOOT_COMPLETED" />
+    </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-sdk android:minSdkVersion="14" >
+    </uses-sdk>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+
+    
+</manifest> 

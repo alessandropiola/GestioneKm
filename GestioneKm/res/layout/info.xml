@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/sfondo">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" android:text="Ciao a tutti, volevo per prima cosa ringraziarvi per il vostro aiuto. Molte cose sono migliorate anche grazie a voi.  Sempre più utenti mi stanno chiedendo modifiche per migliorare questa APP. Se anche tu hai delle idee o se vuoi delle personalizzazioni scrivimi una mail e cercherò di realizzarle!" android:background="@color/red_transparent" android:layout_marginTop="30dip">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Idee o personalizzazioni" android:onClick="mail"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passa alla versione senza banner" android:textStyle="bold" android:textSize="18dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gplay" android:onClick="appmarket"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;&lt; o &gt;&gt;" 
+                android:layout_marginLeft="20dip" 
+                android:layout_marginRight="20dip"
+				android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paypal" android:onClick="paypal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
